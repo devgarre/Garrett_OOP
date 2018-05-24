@@ -12,7 +12,7 @@ public:
 	void SetName(string);
 	string GetType();
 	void SetType(string);
-	virtual void display();
+	void display();
 protected:
 	string name;
 	string type;
@@ -22,14 +22,20 @@ class Goblin : public Character {
 private:
 	int health, speed;
 public:
+	Goblin();
+	Goblin(string charName, string charType, int charHealth, int charSpeed);
 	void setStats(int, int);
+	void display();
 };
 
 class Zombie : public Character {
 private:
-	int health, speed;
+	int damage, dps;
 public:
+	Zombie();
+	Zombie(string charName, string charType, int attackStr, int attackSpeed);
 	void setStats(int, int);
+	void display();
 };
 
 #endif

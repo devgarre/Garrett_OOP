@@ -3,10 +3,10 @@
 
 int main()
 {
-	Goblin goblin1 = Goblin("Squee", "goblin");
-	goblin1.setStats(3, 5);
-	Zombie zombie1 = Zombie("Mikaeus", "zombie");
-	zombie1.setStats(100, 10);
+	Character human1 = Character("Odric", "human");
+	Goblin goblin1 = Goblin("Squee", "goblin", 999, 5);
+	Zombie zombie1 = Zombie("Yawgmoth", "zombie", 100, 2);
+	human1.display();
 	goblin1.display();
 	zombie1.display();
 	system("pause");
